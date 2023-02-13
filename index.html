@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="form-box">
+      <h1>Registration Form </h1>
+      <form id="form">
+        <div id="username" class="inputs">
+          <label for="name">Enter your name</label>
+          <input type="text" required id="name" name="name" placeholder="Your name.." required/>
+        </div>
+        <div id="emailid" class="inputs">
+          <label for="email">Valid Email</label>
+          <input type="email"required id="email" name="email" placeholder="Your email.." required />
+        </div>
+        <div id="passwd" class="inputs">
+          <label for="password">New Password</label>
+          <input type="password" required id="password" name="password" placeholder="Enter Password" required/>
+        </div>
+        <div id="dob_id" class="inputs">
+          <label for="dob">Date of Birth</label>
+          <input id="dob" name="dob" type="date" required/>
+        </div>
+        <div id="agree">
+          <input id="tc" type="checkbox"> I have read and agree to the terms and conditions</input>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="table-box">
+        <h1>Entries</h1>
+        <table id="user-table">
+          <tr>
+            <th>Name</th>
+            <th>Email Id</th>
+            <th>Password</th>
+            <th>Date of Birth</th>
+            <th>Accepted terms?</th>
+        
+        </table>
+      </div>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
